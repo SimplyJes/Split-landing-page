@@ -103,6 +103,12 @@ h1 {
   background-color: var(--right-bg-color);
 }
 
+@media (max-width: 480px) {
+  .container {
+    height: 75%;
+  }
+}
+
 @media (min-width: 760px) {
   /* .split.left {
     top: 0;
