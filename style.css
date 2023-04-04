@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
   margin: 0;
 }
@@ -60,7 +60,6 @@ h1 {
 
 .container {
   position: relative;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: #333;
@@ -68,9 +67,9 @@ h1 {
 
 .split {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .split.left {
@@ -90,9 +89,10 @@ h1 {
 
 .split.right {
   right: 0;
-  background-image: url('https://image-us.samsung.com/us/smartphones/galaxy-s23/configurator/D3-Marketing-Images-DT-1440x368.jpg');
+  background-image: url('https://image-us.samsung.com/us/smartphones/galaxy-z-fold4/configurator/01-Q4-Group-KV-DT-720x540.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  top: 100%;
 }
 
 .split.right::before {
@@ -103,22 +103,45 @@ h1 {
   background-color: var(--right-bg-color);
 }
 
-.hover-left .left {
-  width: var(--hover-width);
-  transition: 0.5s;
-}
+@media (min-width: 760px) {
+  /* .split.left {
+    top: 0;
+    width: 100%;
+  }
 
-.hover-left .right {
-  width: var(--other-width);
-  transition: 0.3s;
-}
+  .split.right {
+    top: 100%;
+    left: 0;
+    width: 100%;
+  } */
 
-.hover-right .right {
-  width: var(--hover-width);
-  transition: 0.5s;
-}
+  .split {
+    width: 50%;
+    height: 100%;
+    overflow-x: hidden;
+  }
 
-.hover-right .left {
-  width: var(--other-width);
-  transition: 0.3s;
+  .split.right {
+    top: 0;
+  }
+
+  .hover-left .left {
+    width: var(--hover-width);
+    transition: 0.5s;
+  }
+
+  .hover-left .right {
+    width: var(--other-width);
+    transition: 0.3s;
+  }
+
+  .hover-right .right {
+    width: var(--hover-width);
+    transition: 0.5s;
+  }
+
+  .hover-right .left {
+    width: var(--other-width);
+    transition: 0.3s;
+  }
 }
