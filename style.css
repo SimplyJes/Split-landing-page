@@ -105,7 +105,7 @@ h1 {
 
 @media (max-width: 480px) {
   .container {
-    height: 75%;
+    height: 65%;
   }
   
   h1 {
