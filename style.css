@@ -36,7 +36,7 @@ h1 {
   align-items: center;
   justify-content: center;
   left: 50%;
-  top: 45%;
+  top: 48%;
   transform: translateX(-50%);
   width: 15rem;
   text-decoration: none;
@@ -119,6 +119,10 @@ h1 {
     transform: translateX(-50%);
     text-align: center;
     white-space: pre-wrap;
+  }
+  
+  .btn {
+    top: 50%;
   }
 }
 
