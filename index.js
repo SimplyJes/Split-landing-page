@@ -5,10 +5,10 @@ const left = document.querySelector('.left')
 const right = document.querySelector('.right')
 
 iphone.addEventListener('click', () => {
-  window.open(alert('Thank you for your patronage'), _blank)
+  window.open(alert('Thank you for your patronage!👏'), _blank)
 })
 samsung.addEventListener('click', () => {
-  window.open(alert('We love you!!!❤❤❤'), _blank)
+  window.open(alert('We love you!❤'), _blank)
 })
 
 left.addEventListener('mouseover', () => {
