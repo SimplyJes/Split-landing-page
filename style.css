@@ -107,6 +107,17 @@ h1 {
   .container {
     height: 75%;
   }
+  
+  h1 {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    text-align: center;
+    /* white-space: nowrap; */
+  }
 }
 
 @media (min-width: 760px) {
